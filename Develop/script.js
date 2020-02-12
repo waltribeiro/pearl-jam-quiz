@@ -1,6 +1,10 @@
+// questions as an array of objects
+ 
 let questions = [
   {
     title: "What is Eddie's last name?",
+
+    //make the 'choices' one array rathr than multiple key value pairs 
     choices: ["Vedder", "Johnson", "Delaware", "Rinter"],
     answer: "Vedder"
   },
@@ -58,7 +62,7 @@ let questions = [
 
 
 
-
+//grab all of the elements
 var questionQuiz = document.getElementById("quiz");
 var questionSubmit = document.getElementById("results");
 var score = document.getElementById("score");
@@ -79,6 +83,7 @@ function timer() {
     timerVar.textContent = "Timer: 0:" + secondsLeft;
   } else if (secondsLeft > 0) {
     secondsLeft--;
+    // make the timer say 0:09 instead of 0:9
     timerVar.textContent = "Timer: 0:0" + secondsLeft;
   } else {
     // you lose the game
@@ -87,9 +92,22 @@ function timer() {
   }
 }
 
+// question code
+$(document).on("click", "button.answers", function (event) {
+  var button = event.target.innerText;
+  if (myQuestions[questCounter].correctAnswer === button) {
+    // increment the score
+    score = score + 15
+  } else {
+    // subtract from the time for wrong answer
+    secondsLeft = secondsLeft - 5
+  }
+  // go to next question
+  questCounter++
+  renderQuestion()
+})
 
-
-
+//determine if it's the right answer
 
 function goToNextQuestion(whatTheUserClicked) {
     var correctText = questions[currentQuestionIndex].answer;
@@ -99,6 +117,9 @@ function goToNextQuestion(whatTheUserClicked) {
         score++;
     }
     else {
+/** maybe I should tell the uder they guessed incorectly?
+ *  but they'll already know when I subtract 5 seconds and don't update the score 
+ */
         console.log("Wrong!");
     }
     currentQuestionIndex++;
@@ -112,6 +133,8 @@ function answerClickSetup() {
     var c = document.getElementById("answer3");
     var d = document.getElementById("answer4");
 
+// show each multiple choice question
+
 a.addEventListener("click", function () { goToNextQuestion(a.innerText); });
 b.addEventListener("click", function () { goToNextQuestion(b.innerText); });
 c.addEventListener("click", function () { goToNextQuestion(c.innerText); });
@@ -119,6 +142,8 @@ d.addEventListener("click", function () { goToNextQuestion(d.innerText); });
 }
 
 answerClickSetup();
+
+// when start utton gets clicked, start the timer and questions
 
 startQuiz.addEventListener("click", function () {
 
@@ -173,7 +198,8 @@ function getNewQuestion(questionIndex) {
     document.getElementById("answer4").innerText = choice4;
 
 }
-//submitAnswer.addEventListener("click", quizTime);
+
+// pulish the score
 function scoreKeeper(){
     document.getElementById("score").innerHTML = score++;
   
