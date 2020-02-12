@@ -1,10 +1,12 @@
-# QUIZ APP
+# PEARL JAM QUIZ
 
-## USER STORY
+## DIRECTIONS
 - Press the **Start Button** to begin the quiz
 - You have 60 seconds to answer all 10 questions
 - As you answer the 10 questions, the game keeps score
-- Get more than 3 questions correct to reveal a prize! 
+
+
+
 - **NOTE**: If you enjoy Pearl Jam, then I think this quiz is for you
 
 ## Links
