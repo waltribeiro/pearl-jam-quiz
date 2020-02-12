@@ -101,6 +101,8 @@ startQuiz.addEventListener("click", function () {
     getNewQuestion(currentQuestionIndex);
 });
 
+// if (questions.title == answer)
+
 var currentQuestion;
 function getNewQuestion(questionIndex) {
     var question = questions[questionIndex];
@@ -116,7 +118,7 @@ function getNewQuestion(questionIndex) {
     //console.log(answerEl1);
     answerEl1.innerText = choice1;
     
-    var choice2 = question.choices[3];
+    var choice2 = question.choices[1];
     var answerEl2 = document.getElementById("answer2");
     //console.log(answerEl2);
     answerEl2.innerText = choice2;
@@ -128,7 +130,7 @@ function getNewQuestion(questionIndex) {
     answerEl3.innerText = choice3;
     //console.log(choice3);
 
-    var choice4 = question.choices[0];
+    var choice4 = question.choices[3];
     var answerEl4 = document.getElementById("answer4");
     //console.log(answerEl4);
     answerEl4.innerText = choice4;
