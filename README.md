@@ -1,6 +1,6 @@
 # PEARL JAM QUIZ
 
-## DIRECTIONS
+## Directions
 - Press the **Start Button** to begin the quiz
 - You have 60 seconds to answer all 10 questions
 - As you answer the 10 questions, the game keeps score
