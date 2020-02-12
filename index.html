@@ -12,7 +12,7 @@
 <style>
 
 html {
-  height: 1100px;
+  height: 1200px;
 }
 
 body {
@@ -24,7 +24,9 @@ body {
 .jumbotron {
   background-color: rgba(245, 245, 245, 0.0);
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255,0,0,0));
-  height: 1050px;
+  height: 1450px;
+  padding-top: 10px;
+
 }
 
 </style>
@@ -45,43 +47,37 @@ body {
   </nav>
 
 
-    <div class="jumbotron">
-        <h1 class="display-4">Pearl Jam Quiz</h1>
-        <p class="lead">You have 60 seconds - click the button to start</p>
-        <p class="lead">
-          <a id="startButton" type="button" class="btn btn-info text-white btn-lg" role="button">START</a>
-        </p>
+  <nav class="container">
+    <nav class="jumbotron">
+      <h1 class="display-4 text-black">Pearl Jam Fan Quiz</h1>
+ 
+        <a class="btn btn-primary btn-lg text-black" id="start" href="#" role="button">Let's start!</a>
 
-        <br>
-        <h2>
-          <p id="countdownPrint"></p>
-        </h2>
-        <br>
-        <h2>
-          <p id="messagePrint"></p>
-        </h2>
-        <br>
-        <h2>
-          <p id="questionPrint"></p>
-        </h2>
-        <br>
-          <h2><p id="choicesPrint">
-            <button type="button" id="choiceButton1" class="btn btn-info"></button>
-            <br>
-            <br>
-            <button type="button" id="choiceButton2" class="btn btn-info"></button>
-            <br>
-            <br>
-            <button type="button" id="choiceButton3" class="btn btn-info"></button>
-          </p></h2>
-        <br>
-          <p id="paragraphPrint"></p>
-        <br>
-        <br>
+      <section id="quiz">
+        <section class="text-black" id="question">Question</section>
+        <section class="text-black" id="answer1">Answer1</section>
+        <section class="text-black" id="answer2">Answer2</section>
+        <section class="text-black" id="answer3">Answer3</section>
+        <section class="text-black" id="answer4">Answer4</section>
+      </section>
+
+      <section class="text-black">
+        <h3 id="score"> Score: </h3>
+        <h3 id="timer"> Timer: </h3>
+        <h3 id="results" class="text-black" ></h3>
+      </section>
+
+    </nav>
+  
+
+  <script src="pop-quiz.js"></script>
+  <script src="question.js"></script>
+  
+</body>
+</html>
 
 
 
-      </div>
 
 
     <footer
