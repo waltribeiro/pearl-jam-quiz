@@ -28,7 +28,32 @@ let questions = [
     title: "Where was Pearl Jam's first show played?",
     choices: ["Off Ramp", "Drive Town", "Score Time", "Hug Bar",],
     answer: "Off Ramp"
-  }
+  },
+  {
+    title: "What is Stone Gossard's favorite color?",
+    choices: ["Blue", "Red", "Purple", "White",],
+    answer: "Red"
+  },
+  {
+    title: "What is Jeff Ament's dog's name?",
+    choices: ["Rudolph", "Turkey", "Longing", "Poppa",],
+    answer: "Poppa"
+  },
+  {
+    title: "How high was the Vans Warped Tour pole?",
+    choices: ["10 feet", "30 feet", "45 feet", "67 feet",],
+    answer: "30 feet"
+  },
+  {
+    title: "What is Red Mosquito about?",
+    choices: ["Biting", "Blood", "Traveling", "Looking back",],
+    answer: "Traveling"
+  },
+  {
+    title: "When was Eddie's car stolen?",
+    choices: ["1989", "1996", "2007", "2016",],
+    answer: "2007"
+  },
 ];
 
 
@@ -41,7 +66,7 @@ var timerVar = document.getElementById("timerHTML");
 var startQuiz = document.getElementById("start")
 
 var score = 0;
-var secondsLeft = 75;
+var secondsLeft = 60;
 var currentQuestionIndex = 0;
 
 
