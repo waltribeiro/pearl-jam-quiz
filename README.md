@@ -1,42 +1,72 @@
-# 04 Web APIs: Code Quiz
+# QUIZ APP
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## USER STORY
+- Press the **Start Button** to begin the quiz
+- You have 60 seconds to answer all 10 questions
+- As you answer the 10 questions, the game keeps score
+- Get more than 3 questions correct to reveal a prize! 
+- **NOTE**: If you enjoy Pearl Jam, then I think this quiz is for you
 
-## User Story
+## Links
+[***CLICK HERE TO BEGIN PLAYING***](http://app1.waltrib.com)
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Contact
+If you like this app and want me to build one for you, then contact me at w@waltrib.com
 
-## Acceptance Criteria
+I have other apps over at my [Github](http://git.waltrib.com)
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+As Eddie Vedder said:
 
-The following animation demonstrates the application functionality:
+> I'll ride the wave where it takes me / I'll hold the pain / Release me
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
-### Review
 
-You are required to submit the following for review:
 
-* The URL of the functional, deployed application.
+## Screenshot
+[![Start Playing](assets/screenshot.png)](http://google.com.au/)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+<!--
+
+1-  New "page" loads
+    First set of questions load
+    Timer is counting down
+    Submit button
+
+.ready(), ordered list of buttons, correct onclick increases time to timer, incorrect button decreases time from timer
+
+2-  Timer increases or decreases
+    New "page" loads with new questions
+    Time is counting down
+    Submit button
+
+.ready(), ordered list of buttons, correct onclic increases time to timer, incorrect button decreases time from timer
+
+3-  Timer increases or decreases
+    New "page" loads with new questions
+    Time is counting down
+    Submit button
+
+.ready(), ordered list of buttons, correct onclick increases time to timer, incorrect button decreases time from timer
+
+4-  Timer increases or decreases
+    New "page" loads with new questions
+    Time is counting down
+    Submit button
+
+.ready(), ordered list of buttons, correct onclick increases time to timer, incorrect button decreases time from timer
+
+5-  Timer increases or decreases
+    New "page" loads with new questions
+    Time is counting down
+    Submit button
+
+.ready(), ordered list of buttons, correct onclick increases time to timer, incorrect button decreases time from timer
+
+6- Score displayed using timer value, with image
+
+
+.onClick () is how we add an event listener
+.ready() is how we load information after the page loads
+
