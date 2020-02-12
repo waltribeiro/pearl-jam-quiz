@@ -1,3 +1,4 @@
+// make questions an array of objects
 let questions = [
   {
     title: "What is Eddie's last name?",
