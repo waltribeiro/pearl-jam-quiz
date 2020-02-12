@@ -37,7 +37,7 @@ let questions = [
 var questionQuiz = document.getElementById("quiz");
 var questionSubmit = document.getElementById("results");
 var score = document.getElementById("score");
-var timer = document.getElementById("timer");
+var timerVar = document.getElementById("timerHTML");
 var startQuiz = document.getElementById("start")
 
 var score = 0;
@@ -45,28 +45,22 @@ var secondsLeft = 75;
 var currentQuestionIndex = 0;
 
 
-
-
-
-
-var timerInterval;
+// Timer Function
+var secondsLeft;
 
 function timer() {
-  if (secondsLeft > 9) {
-    secondsLeft--;
-    countdownPrintVariable.textContent = "0:" + secondsLeft;
-  } else if (secondsLeft > 0) {
-    secondsLeft--;
-    countdownPrintVariable.textContent = "0:0" + secondsLeft;
-  } else {
-    // you lose the game
-    clearInterval(timerInterval);
-    messagePrintVariable.textContent = "you lose!";
-  }
+  if (secondsLeft > 9) {
+    secondsLeft--;
+    timerVar.textContent = "Timer: 0:" + secondsLeft;
+  } else if (secondsLeft > 0) {
+    secondsLeft--;
+    timerVar.textContent = "Timer: 0:0" + secondsLeft;
+  } else {
+    // you lose the game
+    clearInterval(timerInterval);
+    timerVar.textContent = "You lose!";
+  }
 }
-
-
-
 
 
 
