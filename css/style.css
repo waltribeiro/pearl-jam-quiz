@@ -27,3 +27,7 @@ body {
   padding-top: 0px;
   margin: 0px;
 }
+
+.black-stroke {
+  text-shadow: rgb(0, 0, 0) 2px 0 15px;
+}
