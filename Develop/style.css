@@ -2,10 +2,10 @@ html {
   height: 100%;
 }
 
+body {
+  background: url(https://raw.githubusercontent.com/waltribeiro/pearl-jam-quiz/master/Assets/eddie-vedder-3.jpg);
 
-
-
-
+}
 .jumbotron {
   height: 100%;
   padding-top: 0px;
