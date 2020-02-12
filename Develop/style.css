@@ -2,15 +2,8 @@ html {
   height: 100%;
 }
 
-body {
- background-color: #cccccc;
- background-image: url("Assets/eddie-vedder-2.jpg");
- overflow: hidden;
-}
-
 .jumbotron {
-  background-color: rgba(245, 245, 245, 0.0);
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255,0,0,0));
   height: 100%;
-  padding-top: 10px;
+  padding-top: 0px;
+  margin: 0px;
 }
