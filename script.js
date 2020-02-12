@@ -101,7 +101,12 @@ startQuiz.addEventListener("click", function () {
     getNewQuestion(currentQuestionIndex);
 });
 
-// if (questions.title == answer)
+
+if (questions.title == answer) {
+  score = function(theObject) {
+    theObject.make = 'Toyota';
+  }
+}
 
 var currentQuestion;
 function getNewQuestion(questionIndex) {
@@ -147,5 +152,4 @@ function getNewQuestion(questionIndex) {
 function scoreKeeper(){
     document.getElementById("score").innerHTML = score++;
   
-  scoreKeeper();
 }
