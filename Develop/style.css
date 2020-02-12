@@ -1,0 +1,16 @@
+html {
+  height: 1200px;
+}
+
+body {
+ background-color: #cccccc;
+ background-image: url("Assets/eddie-vedder-2.jpg");
+ overflow: hidden;
+}
+
+.jumbotron {
+  background-color: rgba(245, 245, 245, 0.0);
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255,0,0,0));
+  height: 1450px;
+  padding-top: 10px;
+}
