@@ -129,7 +129,6 @@ function goToNextQuestion(whatTheUserClicked) {
 
 function answerClickSetup() {
     var a = document.getElementById("answer1");
-    //console.log(a);
     var b = document.getElementById("answer2");
     var c = document.getElementById("answer3");
     var d = document.getElementById("answer4");
@@ -189,6 +188,7 @@ function getNewQuestion(questionIndex) {
     document.getElementById("answer4").innerText = choice4;
 
 }
+
 //submitAnswer.addEventListener("click", quizTime);
 function scoreKeeper() {
     document.getElementById("score").innerHTML = score;
