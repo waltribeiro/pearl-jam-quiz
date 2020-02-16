@@ -11,29 +11,9 @@ let questions = [
     answer: "Dave"
   },
   {
-    title: "What was Mike Mccready's band pre-Pearl Jam?",
-    choices: [
-      "Longtown",
-      "AFI",
-      "Soundgarden",
-      "Shadow",
-    ],
-    answer: "Shadow"
-  },
-  {
-    title: "Who was the drummer on Pearl Jam's 1991 debut album Ten?",
-    choices: ["Mike Garcia", "Dave Krusen", "Ten Townsend", "Marcus Downright",],
-    answer: "Dave Krusen"
-  },
-  {
     title: "Where was Pearl Jam's first show played?",
     choices: ["Off Ramp", "Drive Town", "Score Time", "Hug Bar",],
     answer: "Off Ramp"
-  },
-  {
-    title: "What is Stone Gossard's favorite color?",
-    choices: ["Blue", "Red", "Purple", "White",],
-    answer: "Red"
   },
   {
     title: "What is Jeff Ament's dog's name?",
@@ -47,7 +27,7 @@ let questions = [
   },
   {
     title: "What is Red Mosquito about?",
-    choices: ["Biting", "Blood", "Traveling", "Looking back",],
+    choices: ["Biting", "Blood", "Walking", "Driving",],
     answer: "Traveling"
   },
   {
