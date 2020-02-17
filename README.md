@@ -24,4 +24,4 @@ As Eddie Vedder said:
 
 
 ## Screenshot
-[![Start Playing](Assets/screenshot.png)](https://waltribeiro.github.io/pearl-jam-quiz/)
+[![Start Playing](img/screenshot.png)](https://waltribeiro.github.io/pearl-jam-quiz/)
